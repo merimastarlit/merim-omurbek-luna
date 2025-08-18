@@ -1,0 +1,54 @@
+body {
+    /*background-color: blanchedalmond;*/
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 200px;
+    height: 230px;
+    margin-top: 80px;
+    margin-left: 80%;
+    
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: -250px;
+}
+
+p {
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 16px;
+
+}
+
+.glass-element {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    opacity: 0.9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    
+   
+}
+
+.glass-element1 {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    opacity: 0.9;
+    padding: 20px;
+    margin: 20px 30px 200px 100px;
+    margin-top: -220px;
+    width: 60%;
+    
+   
+}
