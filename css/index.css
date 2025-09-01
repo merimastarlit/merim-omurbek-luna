@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
     background-color: rgba(31, 20, 48, 0.999);
     background-repeat: no-repeat;
@@ -37,7 +40,6 @@ header {
     padding: 15px 20px;
     width: 100%;
     display: flex;
-
     gap: 30px;
     list-style: none;
 
@@ -47,6 +49,8 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: black;
+    font-family: "Inter", sans-serif;
+    display: flex;
 
 
 }
@@ -56,10 +60,9 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 10px;
-    /* Add padding for better click area */
     border-radius: 5px;
     transition: background-color 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: normal;
     font-size: medium;
     
@@ -69,37 +72,24 @@ nav a:hover {
     background-color: rgba(0, 0, 139, 0.1);
 }
 
+#home {
+    display:flex;
 
-
-h1 {
-    text-align: center;
-    color: black;
-    font-size: 40px;
-    margin-top: 50px;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-
-
+    background-image:url ('images/ai.jpg');
 }
 
-h2 {
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
 
-}
 
 p {
     width: 100%;
     text-align: left;
     color: black;
     font-size: 16px;
+    font-family: "Inter", sans-serif;
 
 }
 
+/* Glassmorphism effect for sections */
 .glass-element {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
@@ -110,10 +100,17 @@ p {
     margin-top: 100px;
     width: 80%;
     justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: "Inter", sans-serif;
 
 
 }
 
+/*header styling only*/
 .glass-element1 {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
@@ -122,11 +119,17 @@ p {
     padding: 40px;
     margin: 10px 30px 100px 120px;
     width: 80%;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
 
 
 
 }
-
+/*about section styling only*/
 .about-columns {
     display: flex;
     justify-content: space-between;
@@ -142,6 +145,8 @@ p {
     margin: 5px;
 }
 
+
+/*Connect section styling only*/
 .columns {
     display: flex;
     align-items: center;
@@ -170,6 +175,8 @@ p {
     transform: scale(1.1);
 }
 
+
+/* Footer styling */
 footer {
     background-color: #333;
     color: white;
@@ -180,8 +187,9 @@ footer {
 }
 
 #footer {
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     color: white;
     font-weight: normal;
 }
+
