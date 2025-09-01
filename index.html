@@ -2,49 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My First Webpage </title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <img src="../images/photo.png" alt="merim's passport photo" height="300" width="300">
-    <h1 class="glass-element1"> Merim Omurbek</h1>
-    <section id="About" class="glass-element">
-        <h2>About</h2>
-        <p>I am from Kyrgyzstan and live in Los Angeles, CA since 2016. I love learning about technology innovation and lately trying to learn AI. At this moment I am
-        learning Javascript and Python languages at CTD. Previously, I studied Cloud Architecture to undertand its role in businesses and today's world and it was faschinating. I want to become an Infrastructure Engineer and want to learn AI's role in this field.   </p>
+    <header <nav>
+        <ul class="navbar">
+            <li class="navbar-column"><a href="#About">About</a></li>
+            <li class="navbar-column"><a href="#Experience">Experience</a></li>
+            <li class="navbar-column"><a href="#Skills">Skills</a></li>
+            <li class="navbar-column"><a href="#Projects">Projects</a></li>
+            <li class="navbar-column"><a href="#Connect">Connect</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <h1 class="glass-element1"> Merim Omurbek</h1>
     </section>
-    
+
+    <section id="About" class="glass-element">
+        <h2> ABOUT:</h2>
+
+        <div class="about-columns">
+
+            <div class="about-column">
+                <p>I am from Kyrgyzstan and live in Los Angeles, CA since 2016. I love learning about technology
+                    innovation and lately trying to learn AI. At this moment I am
+                    learning Javascript and Python languages at CTD. Previously, I studied Cloud Architecture to
+                    undertand its role in businesses and today's world and it was faschinating. I want to become an
+                    Infrastructure Engineer and want to learn AI's role in this field. </p>
+
+            </div>
+
+            <div class="about-column">
+                <img id="about-photo" src="../images/photo.png" alt="merim's passport photo" height="300" width="300">
+            </div>
+        </div>
+    </section>
+
     <section id="Experience" class="glass-element">
-        <h2>Experience:</h2>
+        <h2>EXPERIENCE:</h2>
 
         <ul>
             <li>BS in Education in 2014 </li>
-             <li>MS in Technology Management in 2020</li>
+            <li>MS in Technology Management in 2020</li>
             <li>AWS Solutions Architect -Associate Certificate in 2024</li>
-            
+            <li> Cloud Computing/ DevOps bootcamp 2023-2024</li>
+            <li>CTD Bootcamp Student since May 2024 learning JavaScript, HTML, CSS, Python</li>
+
         </ul>
     </section>
 
     <section id="Skills" class="glass-element">
-        <h2>Skills:</h2>
-        <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Cloud Computing</li>
-    </section> 
-    
-    <section id="Connect" class="glass-element">
-        <h2>Connect:</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/merim-omurbek/">LinkedIn</a></li>
-            <li><a href="https://github.com/merimastarlit">GitHub</a></li>
-         </ul>
+        <h2>SKILLS:</h2>
+
     </section>
-    
+
+    <section id="Projects" class="glass-element">
+        <h2>PROJECTS:</h2>
+        <ul>
+
+        </ul>
+    </section>
+
+
+    <section id="Connect" class="glass-element">
+        <h2>CONNECT:</h2>
+        <div class="columns">
+            <div class="column">
+                <a href="https://www.linkedin.com/in/merim-omurbek/">
+                    <img class="social-media" src="../images/linkedin.png" alt="LinkedIn logo">
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://github.com/merimastarlit">
+                    <img class="social-media" src="../images/github.png" alt="GitHub logo">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer">&copy; 2024 Merim Omurbek</p>
+    </footer>
 
 </body>
 
