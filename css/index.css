@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 body {
     background-color: rgba(35, 5, 57, 0.999);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+
 
 }
 
@@ -68,16 +71,16 @@ h1 {
     font-size: 42px;
     margin-bottom: 10px;
     font-weight: normal;
-    font-family: "Inter", sans-serif;
+    font-family: "Playfair Display", serif;
 
 }
 
 h2 {
     color: black;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-weight: lighter;
-    font-family: "Inter", sans-serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
 
 }
@@ -87,7 +90,7 @@ h3 {
     font-size: 26px;
     margin-bottom: 10px;
     font-weight: normal;
-    font-family: "Inter", sans-serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
 
 }
@@ -98,6 +101,7 @@ p {
     color: black;
     font-size: 16px;
     font-family: "Inter", sans-serif;
+    line-height: 1.6;
 
 }
 
@@ -205,6 +209,7 @@ p {
     align-items: center;
     gap: 10px;
     margin: 5px;
+    padding: 10px;
 }
 
 .about {
@@ -227,16 +232,18 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .experience-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin: 30px 60px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #420957;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .experience-header {
@@ -244,15 +251,15 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .job-title {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     color: #333;
     margin: 0;
-    flex: 1;
+    display: inline-block;
 }
 
 .job-date {
@@ -260,7 +267,7 @@ p {
     color: #666;
     font-weight: 500;
     margin: 0;
-    white-space: nowrap;
+    display: inline-block;
 }
 
 .job-description {
@@ -283,8 +290,6 @@ p {
         align-self: flex-start;
     }
 }
-
-
 
 
 /*skills section styling only*/
@@ -336,7 +341,7 @@ footer {
 }
 
 #footer {
-    font-family: "Inter", sans-serif;
+    font-family: "Playfair Display", serif;
     font-size: 14px;
     color: white;
     font-weight: normal;
