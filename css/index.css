@@ -1,12 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 body {
-    background-color: rgba(31, 20, 48, 0.999);
+    background-color: rgba(35, 5, 57, 0.999);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    padding-top: 15%;
+
+
 }
 
 
@@ -20,17 +22,8 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     opacity: 0.9;
-    justify-content: flex-end;
 
 
-}
-
-
-#about-photo {
-    width: 240px;
-    height: 270px;
-    margin-left: 200px;
-    margin-bottom: 100px;
 
 }
 
@@ -40,6 +33,7 @@ header {
     padding: 15px 20px;
     width: 100%;
     display: flex;
+    flex-flow: row wrap justify-content: flex-end;
     gap: 30px;
     list-style: none;
 
@@ -65,20 +59,41 @@ nav a {
     font-family: "Inter", sans-serif;
     font-weight: normal;
     font-size: medium;
-    
+
 }
 
 nav a:hover {
     background-color: rgba(0, 0, 139, 0.1);
 }
 
-#home {
-    display:flex;
+h1 {
+    color: whitesmoke;
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: "Playfair Display", serif;
 
-    background-image:url ('images/ai.jpg');
 }
 
+h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: "Playfair Display", serif;
+    text-align: center;
 
+}
+
+h3 {
+    color: black;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+
+}
 
 p {
     width: 100%;
@@ -86,8 +101,21 @@ p {
     color: black;
     font-size: 16px;
     font-family: "Inter", sans-serif;
+    line-height: 1.6;
 
 }
+
+
+
+#about-photo {
+    max-width: 100%;
+    height: auto;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+
 
 /* Glassmorphism effect for sections */
 .glass-element {
@@ -101,12 +129,6 @@ p {
     width: 80%;
     justify-content: center;
     text-align: center;
-    color: black;
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: lighter;
-    font-family: "Inter", sans-serif;
-
 
 }
 
@@ -126,9 +148,53 @@ p {
     font-weight: normal;
     font-family: "Inter", sans-serif;
 
-
-
 }
+
+/*section background styling only*/
+.section-background {
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 50px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    opacity: 0.9;
+    /*justify-content: center;
+    text-align: center;*/
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    /* background: url("images/code-background.png") 0 0 no-repeat; */
+    background: linear-gradient(rgba(20, 20, 20, .7),
+            rgba(20, 20, 20, .7)),
+        url("../images/ai.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height: 40vh;
+    text-align: right;
+}
+
+/*heading section styling only*/
+.heading {
+
+    margin: 0 auto;
+    padding: 50px;
+    width: 90%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    opacity: 0.9;
+    justify-content: center;
+    text-align: center;
+}
+
 /*about section styling only*/
 .about-columns {
     display: flex;
@@ -143,7 +209,94 @@ p {
     align-items: center;
     gap: 10px;
     margin: 5px;
+    padding: 10px;
 }
+
+.about {
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 50px;
+    width: 90%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    opacity: 0.9;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*experience section styling only*/
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #420957;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    display: inline-block;
+}
+
+.job-date {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin: 0;
+    display: inline-block;
+}
+
+.job-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .job-date {
+        align-self: flex-start;
+    }
+}
+
+
+/*skills section styling only*/
+
+
+/*projects section styling only*/
+
 
 
 /*Connect section styling only*/
@@ -151,17 +304,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .column {
 
     display: flex;
-    gap: 10px;
+
     justify-content: center;
 
     margin: 5px;
-    padding: 10px 100px;
+    padding: 10px;
 
 }
 
@@ -183,13 +336,13 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    display: flex;
     justify-content: center;
 }
 
 #footer {
-    font-family: "Inter", sans-serif;
+    font-family: "Playfair Display", serif;
     font-size: 14px;
     color: white;
     font-weight: normal;
 }
-
