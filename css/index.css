@@ -301,7 +301,7 @@ p {
 /*skills section styling only*/
 
 /* UL is the flex container */
-#Skills ul {
+#skills ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -501,7 +501,7 @@ footer {
         padding: 0.4rem 0.7rem;
     }
 
-    #Skills ul {
+    #skills ul {
         gap: 0.6rem;
         justify-content: flex-start;
     }
@@ -608,7 +608,7 @@ footer {
         padding: 0.45rem 0.9rem;
     }
 
-    #Skills ul {
+    #skills ul {
         gap: 0.75rem;
         justify-content: center;
         /* center align for tablets */
@@ -650,7 +650,7 @@ footer {
         text-align: right;
     }
 
-    #Skills ul {
+    #skills ul {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
