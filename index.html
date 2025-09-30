@@ -17,6 +17,7 @@
                 <li class="navbar-column"><a href="#Skills">Skills</a></li>
                 <li class="navbar-column"><a href="#Projects">Projects</a></li>
                 <li class="navbar-column"><a href="#Connect">Connect</a></li>
+                <li class="navbar-column"><a href="#Leave a Message">Message</a></li>
             </ul>
         </nav>
     </header>
@@ -117,6 +118,31 @@
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- Leave a Message -->
+    <section>
+        <h2 class="message_heading">Leave a Message</h2>
+        <form name="leave_message">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="usersName" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="usersEmail" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="usersMessage" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+    <!-- Message list -->
+    <section id="messages" class="message_heading">
+        <h2 class="message_heading">Messages:</h2>
+        <ul>
+        </ul>
     </section>
 
     <footer>
