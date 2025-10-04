@@ -424,7 +424,7 @@ button:hover {
     background-color: #5d0c7a;
 }
 
-.message_heading {
+.message_style {
     margin: 1rem auto;
     padding: 1rem;
     text-align: center;
@@ -620,7 +620,7 @@ label[for="message"] {
         font-size: 1rem;
     }
 
-    .message_heading {
+    .message_style {
         width: 80%;
         font-size: 1.2rem;
         margin: 1rem auto;
@@ -757,7 +757,7 @@ label[for="message"] {
         margin: 0 auto;
     }
 
-    .message_heading {
+    .message_style {
         font-size: 1.4rem;
         padding: 15px 0;
     }

@@ -57,7 +57,6 @@ messageForm.addEventListener("submit", (event) => {
         entry.remove();
     });
     newMessage.appendChild(removeButton);
-    messageList.appendChild(newMessage);
 
     //resetting the form after submission
     messageForm.reset();
