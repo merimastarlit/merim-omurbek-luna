@@ -163,6 +163,16 @@ p {
     text-align: center;*/
 }
 
+#h2 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    font-weight: lighter;
+    font-family: "Inter", serif;
+    text-align: center;
+
+}
+
 
 .home {
     display: flex;
@@ -399,6 +409,91 @@ p {
 }
 
 
+/* Prominent Projects styling */
+.prominent-projects {
+    padding: 20px 16px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Two columns each with two stacked boxes */
+.project-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.06);
+    /* matches section tone */
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    color: inherit;
+    font-family: inherit;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.55);
+}
+
+/* details/summary dropdown styling */
+.project-card details summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: rgba(35, 5, 57, 0.999);
+    font-size: 1.05rem;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card details summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-desc {
+    margin-top: 10px;
+    color: black;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Responsive: single column on phones */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project-card {
+        padding: 14px;
+    }
+}
+
+/* Tablet tweak */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-grid {
+        gap: 16px;
+    }
+
+    .project-card {
+        padding: 14px;
+    }
+}
+
+
+
+
 /* Footer styling */
 footer {
     background-color: black;
@@ -458,6 +553,33 @@ button:hover {
     background-color: #5d0c7a;
 }
 
+#leave-message {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 60%;
+}
+
+#leave-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#leave-message label,
+#leave-message input,
+#leave-message textarea,
+#leave-message button {
+    margin: 0.2rem 0;
+}
+
+#messages {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 60%;
+}
+
 .message_style {
     margin: 1rem auto;
     padding: 1rem;
@@ -472,6 +594,7 @@ label[for="message"] {
     font-weight: normal;
     font-family: "Inter", sans-serif;
     color: white;
+    text-align: left;
 }
 
 .message-list li {

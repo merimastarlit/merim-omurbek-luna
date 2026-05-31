@@ -9,7 +9,7 @@ copyright.id = "footer";
 
 
 //Skills section dynamic list
-let skills = ["JavaScript", "Python", "HTML", "CSS", "AWS Cloud", "GCP Cloud", "Git", "GitHub", "DevOps", "ArgoCD", "Kubernetes", "Docker", "GitHub Actions CI", "Helm", "Terraform"];
+let skills = ["JavaScript", "Python", "Linux", "HTML", "CSS", "AWS Cloud", "GCP Cloud", "Git", "GitHub Actions", "DevOps", "ArgoCD", "Kubernetes", "Docker", "Prometheus", "Grafana", "Helm", "Terraform", "SQL", "DynamoDB", "Python frameworks: Django, Pandas, NumPy"];
 let skillsSection = document.getElementById("skills");
 let skillsList = skillsSection.querySelector("ul");
 
@@ -121,3 +121,17 @@ fetch('https://api.github.com/users/merimastarlit/repos')
         projectSection.appendChild(errorMessage);
     });
 
+
+// Keep only one Prominent Project details open at a time
+document.addEventListener("DOMContentLoaded", () => {
+    const projectDetails = document.querySelectorAll('#ProminentProjects .project-card details');
+    projectDetails.forEach(d => {
+        d.addEventListener('toggle', () => {
+            if (d.open) {
+                projectDetails.forEach(other => {
+                    if (other !== d) other.open = false;
+                });
+            }
+        });
+    });
+});
